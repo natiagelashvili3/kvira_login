@@ -20,18 +20,22 @@
     
     <div class="form-container">
         <h2 class="form-header">Log in</h2>
-        <form>
+        <p id="form-message"></p>
+        <form onsubmit="return false;" id="form">
             <div class="form-group">
                 <label>Username</label>
-                <input type="text">
+                <input type="text" id="username">
             </div>
             <div class="form-group">
                 <label>Password</label>
-                <input type="text">
+                <input type="password" id="password"> 
             </div>
-            <button>Log in</button>
+            <button id="form-submit-btn">Log in</button>
+            <div class="error-message" id="error-message"></div>
         </form>
+        
     </div>
 
+    <script src="script.js"></script>
 </body>
 </html>
